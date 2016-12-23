@@ -24,11 +24,12 @@ import footer from '../components/footer/footer.component';
 import main from './main/main.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
+import GamesComponent from './games/games.component';
 
 import './app.css';
 
 angular.module('myappApp', [ngCookies, ngResource, ngSanitize, uiRouter, _Auth, account, admin,
-  navbar, footer, main, constants, util
+  navbar, footer, main, constants, util, GamesComponent
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
